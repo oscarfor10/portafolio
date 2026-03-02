@@ -294,7 +294,7 @@ header {
 /*-----------------------[ 6.Side Menu CSS ]------------------------*/
 .side-menu-main {
     position: sticky;
-    top: 30px;
+    top: 87px;
     overflow: auto;
 }
 .list-menu {
@@ -1648,4 +1648,68 @@ button.bottom-top-button:hover {
 
 .services-box:hover .service-icon {
     transform: scale(1.1);
+}
+/* ==========================
+   PROJECT MODAL STYLES
+========================== */
+
+.project-title {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.project-category {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.project-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 30px;
+    font-size: 14px;
+    padding: 15px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.project-description p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.project-result {
+    padding-top: 10px;
+    font-weight: 500;
+}
+.modal-content {
+    border-radius: 12px;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.overlay-icon {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+.gallery-item:hover .overlay-icon {
+    transform: scale(1.1);
+}
+
+/* ==========================
+   MENU DE CONTACTO
+========================== */
+.phone-num p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+.phone-num {
+    font-size: 14px;
 }
