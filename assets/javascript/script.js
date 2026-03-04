@@ -1,4 +1,4 @@
-$(document).on('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     window.ityped.init(document.querySelector('.ityped'), {
         strings: [
             'Web Developer',
@@ -120,13 +120,32 @@ $(window).on('scroll', function () {
 
 /*------------------------------------- Tabs -------------------------------------*/
 $(function () {
+
+    const animClasses = '.fade_up, .fade_down, .zoom_in, .zoom_out, .fade_right, .fade_left, .flip_left, .flip_right, .flip_up, .flip_down';
+
     $(document).on('click', '.tab-btn-main a', function (e) {
+
         e.preventDefault();
+
         const tabId = $(this).data('tab');
-        $('.tab-btn-main a, .Tabcondent').removeClass('tab-active');
+
+        $('.tab-btn-main a').removeClass('tab-active');
         $(this).addClass('tab-active');
-        $('#' + tabId).addClass('tab-active');
+
+        $('.Tabcondent').removeClass('tab-active');
+
+        const activeTab = $('#' + tabId).addClass('tab-active');
+
+        // Reiniciar animaciones dentro del tab
+        const elements = activeTab.find(animClasses);
+
+        elements.each(function () {
+            this.classList.remove('show');
+            observer.observe(this);
+        });
+
     });
+
 });
 
 /*------------------------------------- Pop Videos -------------------------------------*/
