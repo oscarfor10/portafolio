@@ -1,4 +1,3 @@
-// Typing Text Js
 $(document).on('DOMContentLoaded', function () {
     window.ityped.init(document.querySelector('.ityped'), {
         strings: [
@@ -121,35 +120,13 @@ $(window).on('scroll', function () {
 
 /*------------------------------------- Tabs -------------------------------------*/
 $(function () {
-
-  const animClasses = '.fade_up, .fade_down, .zoom_in, .zoom_out, .fade_right, .fade_left, .flip_left, .flip_right, .flip_up, .flip_down';
-
-  $(document).on('click', '.tab-btn-main a', function (e) {
-    e.preventDefault();
-
-    const tabId = $(this).data('tab');
-
-    // activar botón
-    $('.tab-btn-main a').removeClass('tab-active');
-    $(this).addClass('tab-active');
-
-    // ocultar todos los tabs
-    $('.Tabcondent').removeClass('tab-active');
-
-    // mostrar tab actual
-    const activeTab = $('#' + tabId).addClass('tab-active');
-
-    // reiniciar animaciones
-    const elements = activeTab.find(animClasses);
-
-    elements.each(function(){
-      this.classList.remove('show');   // quitar animación previa
-      observer.unobserve(this);        // limpiar observer
-      observer.observe(this);          // volver a observar
+    $(document).on('click', '.tab-btn-main a', function (e) {
+        e.preventDefault();
+        const tabId = $(this).data('tab');
+        $('.tab-btn-main a, .Tabcondent').removeClass('tab-active');
+        $(this).addClass('tab-active');
+        $('#' + tabId).addClass('tab-active');
     });
-
-  });
-
 });
 
 /*------------------------------------- Pop Videos -------------------------------------*/

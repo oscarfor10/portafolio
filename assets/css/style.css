@@ -240,15 +240,6 @@ canvas {
     opacity: 1;
     transform: translateY(0) scale(1);
 }
-.fade_up,
-.fade_down,
-.zoom_in,
-.zoom_out,
-.fade_right,
-.fade_left {
-    opacity: 0;
-    transition: all 0.8s ease;
-}
 
 .show {
     opacity: 1;
