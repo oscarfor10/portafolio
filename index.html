@@ -1980,34 +1980,29 @@
 
                     <script>
 
-                        document.getElementById("sendWhatsapp").addEventListener("click", function (e) {
+document.getElementById("sendWhatsapp").addEventListener("click", function (e) {
 
-                            e.preventDefault();
+    e.preventDefault();
 
-                            const nombre = document.querySelector("input[name='YourName']").value;
-                            const email = document.querySelector("input[name='EmailID']").value;
-                            const subject = document.querySelector("input[name='subject']").value;
-                            const mensaje = document.querySelector("input[name='message']").value;
+    const nombre = document.querySelector("input[name='YourName']").value;
+    const email = document.querySelector("input[name='EmailID']").value;
+    const subject = document.querySelector("input[name='subject']").value;
+    const mensaje = document.querySelector("input[name='message']").value;
 
-                            if (nombre === "" || email === "" || subject === "" || mensaje === "") {
-                                alert("Por favor completa todos los campos.");
-                                return;
-                            }
+    if (nombre === "" || email === "" || subject === "" || mensaje === "") {
+        alert("Por favor completa todos los campos.");
+        return;
+    }
 
-                            const numero = "573003625853";
+    const numero = "573003625853";
 
-                            const texto =
-                                `🚀 Nueva solicitud desde el portafolio%0A%0A
-                                    Nombre: ${nombre}%0A%0A
-                                    Email: ${email}%0A%0A
-                                    Proyecto: ${subject}%0A%0A
-                                    Mensaje:%0A${mensaje}`;
+    const texto = `Hola, mi nombre es ${nombre}%0AEmail: ${email}%0AProyecto: ${subject}%0AMensaje: ${mensaje}`;
 
-                            const url = `https://wa.me/${numero}?text=${texto}`;
+    const url = `https://wa.me/${numero}?text=${texto}`;
 
-                            window.open(url, "_blank");
+    window.open(url, "_blank");
 
-                        });
+});
 
                     </script>
                     <!-- ====================================== Footer ===================================== -->
