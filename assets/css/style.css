@@ -1905,4 +1905,48 @@ transition:transform .3s ease;
     filter: drop-shadow(0 0 12px rgba(255,255,255,.4));
 }
 
+/* ==========================
+   What I do
+========================== */
+.services-section{
+    margin-top:80px;
+}
 
+.services-row{
+    margin-top:40px;
+}
+
+.service-box{
+    background:rgba(255,255,255,0.03);
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+    transition:all .35s ease;
+}
+
+.service-box:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.06);
+}
+
+.service-icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.service-box h4{
+    color:#ffffff;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.service-box p{
+    color:#bdbdbd;
+    font-size:15px;
+    line-height:1.6;
+}
+
+.tech-icon{
+    width:45px;
+    height:45px;
+}
