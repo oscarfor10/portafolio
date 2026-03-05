@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arya Stark</title>
+    <title>Oscar Pereira</title>
     <link rel="icon" type="image/x-icon" href="assets/images/svg/favicon.svg">
     <link rel="stylesheet" href="assets/css/swap.css">
     <link rel="stylesheet" href="assets/css/fancybox.min.css">
@@ -47,7 +47,7 @@
                 </a>
                 <div class="aryaBtn-toggle-main mt-0">
                     <a href="#contact" class="aryaBtn hire-me-btn">
-                        Hire Me <img src="assets/images/svg/hireMe-svg.svg" alt="hireMe-svg">
+                        Contratarme <img src="assets/images/svg/hireMe-svg.svg" alt="hireMe-svg">
                     </a>
                     <button id="menu-toggle" class="menu-toggle-button">
                         <span class="hamburger" id="hamburger-1">
@@ -97,7 +97,7 @@
                                     <a href="#blog">BLOG<img src="assets/images/svg/blog.svg" alt="blog"></a>
                                 </li> -->
                                 <li>
-                                    <a href="#contact">CONTACT<img src="assets/images/svg/contact.svg"
+                                    <a href="#contact">CONTACTO<img src="assets/images/svg/contact.svg"
                                             alt="contact"></a>
                                 </li>
                             </ul>
@@ -1346,7 +1346,7 @@
                             </div>
                         </div>
                         <div class="coding-skill-section">
-                            <h2 class="creative brand pb-0 fade_down">Core <span>Technologies</span></h2>
+                            <h2 class="creative brand pb-0 fade_down">Tecnologías<span> Centrales</span></h2>
 
                             <div id="progress">
 
@@ -1365,7 +1365,7 @@
                         <div class="coding-skill-section">
 
                             <h2 class="creative brand pb-0 fade_down">
-                                Tech <span>Stack</span>
+                                Stack <span>Tecnológico</span>
                             </h2>
 
                             <div class="tech-stack">
@@ -1425,7 +1425,7 @@
                         </div>
                         <div class="awards-section overflow-hidden">
 
-                            <h2 class="creative pb-0 fade_down">Services.</h2>
+                            <h2 class="creative brand pb-0 fade_down">Soluciones <span>Digitales</span></h2>
 
                             <div class="row awards-row">
 
@@ -1980,41 +1980,47 @@
 
                     <script>
 
-document.getElementById("sendWhatsapp").addEventListener("click", function (e) {
+                        document.getElementById("sendWhatsapp").addEventListener("click", function (e) {
 
-    e.preventDefault();
+                            e.preventDefault();
 
-    const nombre = document.querySelector("input[name='YourName']").value;
-    const email = document.querySelector("input[name='EmailID']").value;
-    const subject = document.querySelector("input[name='subject']").value;
-    const mensaje = document.querySelector("input[name='message']").value;
+                            const nombre = document.querySelector("input[name='YourName']").value;
+                            const email = document.querySelector("input[name='EmailID']").value;
+                            const subject = document.querySelector("input[name='subject']").value;
+                            const mensaje = document.querySelector("input[name='message']").value;
 
-    if (nombre === "" || email === "" || subject === "" || mensaje === "") {
-        alert("Por favor completa todos los campos.");
-        return;
-    }
+                            if (nombre === "" || email === "" || subject === "" || mensaje === "") {
+                                alert("Por favor completa todos los campos.");
+                                return;
+                            }
 
-    const numero = "573003625853";
+                            const numero = "573003625853";
 
-    const texto = `Hola, mi nombre es ${nombre}%0AEmail: ${email}%0AProyecto: ${subject}%0AMensaje: ${mensaje}`;
+                            const texto = `Hola, mi nombre es ${nombre}%0AEmail: ${email}%0AProyecto: ${subject}%0AMensaje: ${mensaje}`;
 
-    const url = `https://wa.me/${numero}?text=${texto}`;
+                            const url = `https://wa.me/${numero}?text=${texto}`;
 
-    window.open(url, "_blank");
+                            window.open(url, "_blank");
 
-});
+                        });
 
                     </script>
                     <!-- ====================================== Footer ===================================== -->
                     <footer>
                         <div class="rights-reserved">
-                            <h2>© 2026 - All rights reserved by
-                                <a href="https://1.envato.market/website-portfolio" target="_blank">The_Krishna.</a>
-                            </h2>
+
+                            <h2>© 2026 Oscar David Pereira</h2>
+
+                            <p class="footer-role">
+                                Backend Developer | Laravel | Automation
+                            </p>
+
                             <div class="home-media-icon-main-head">
-                                <a href="#" target="_blank">Terms & Conditions</a>
-                                <a href="#" target="_blank">Privacy Policy</a>
+                                <a href="mailto:oscardavidgonzalez10@gmail.com">Gmail</a>
+                                <a href="https://github.com/oscarfor10">GitHub</a>
+                                <a href="https://wa.me/573003625853">WhatsApp</a>
                             </div>
+
                         </div>
                     </footer>
                 </div>

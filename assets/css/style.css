@@ -1950,3 +1950,30 @@ transition:transform .3s ease;
     width:45px;
     height:45px;
 }
+/* ==========================
+   Footer
+========================== */
+.rights-reserved{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.footer-role{
+    color:#aaa;
+    font-size:14px;
+    margin:0;
+    text-align:center;
+    flex:1;
+}
+
+.rights-reserved h2{
+    margin:0;
+    font-size:16px;
+}
+
+.home-media-icon-main-head{
+    display:flex;
+    gap:25px;
+}
