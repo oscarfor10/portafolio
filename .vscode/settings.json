@@ -1,3 +1,6 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "animations.CursorAnimation": false,
+    "animations.Scrolling": "Scale",
+    "animations.Enabled": true
 }

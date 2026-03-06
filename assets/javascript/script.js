@@ -131,7 +131,7 @@ $(function () {
 
     const animClasses = '.fade_up, .fade_down, .zoom_in, .zoom_out, .fade_right, .fade_left, .flip_left, .flip_right, .flip_up, .flip_down';
 
-    $(document).on('click', '.tab-btn-main a', function (e) {
+    $(document).on('click', '.tab-btn-main a', function (e) {  
 
         e.preventDefault();
 
