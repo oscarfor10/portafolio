@@ -33,7 +33,7 @@ $(window).on("load", function(){
 
     video.addEventListener("timeupdate", function(){
 
-        if(!animationStarted && video.currentTime >= video.duration - 2){
+        if(!animationStarted && video.currentTime >= video.duration - 2.5){
 
             animationStarted = true;
 
