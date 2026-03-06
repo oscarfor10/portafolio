@@ -23,41 +23,49 @@ document.addEventListener('DOMContentLoaded', () => {
 
 /*------------------------------------- Preloader -------------------------------------*/
 (function ($) {
-    $(window).on('load', function () {
-        const svg = document.getElementById("loade-svg");
-        const tl = gsap.timeline();
 
-        const shapes = {
-            start: "M0 502S175 272 500 272s500 230 500 230V0H0Z",
-            end: "M0 2S175 1 500 1s500 1 500 1V0H0Z"
-        };
+$(window).on("load", function(){
 
-        tl.to(".loading", {
-            delay: 1.2,
-            y: -50,
-            opacity: 0,
-            duration: 0.6
-        })
-            .to(svg, {
-                duration: 0.6,
-                attr: { d: shapes.start },
-                ease: "power1.easeIn"
+    const video = document.getElementById("loaderVideo");
+    const loader = document.querySelector(".preloader");
+
+    let animationStarted = false;
+
+    video.addEventListener("timeupdate", function(){
+
+        if(!animationStarted && video.currentTime >= video.duration - 2){
+
+            animationStarted = true;
+
+            const tl = gsap.timeline();
+
+            tl
+
+            // desaparecer video
+            .to(".loading-video",{
+                opacity:0,
+                duration:0.1
             })
-            .to(svg, {
-                duration: 0.6,
-                attr: { d: shapes.end },
-                ease: "power1.easeOut"
+
+            // subir loader
+            .to(loader,{
+                y:"-100%",
+                duration:0.8,
+                ease:"power2.inOut"
             })
-            .to(".preloader", {
-                y: -1000,
-                duration: 0.8
-            })
-            .set(".preloader", {
-                zIndex: -1,
-                display: "none"
+
+            // eliminar loader
+            .set(loader,{
+                display:"none"
             });
+
+        }
+
     });
-}(jQuery));
+
+});
+
+})(jQuery);
 /*------------------------------------- Menu Toggle -------------------------------------*/
 $(document).ready(function () {
     const $menuToggle = $('#menu-toggle');
